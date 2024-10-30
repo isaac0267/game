@@ -23,7 +23,7 @@ while player_score<target_score and computer_score<target_score: # so long the p
   computer_score+=rolls() #The code is doing the same thing. calling the function and adding the value to computer_score 
 
   if player_score >=target_score:  #Condition, the code is if the player_score is greater or equal to target_score
-   playr() # calling the win function
+   playr() # calling the player function
    break # make a break if the player win 
   elif computer_score>=target_score: ## otherwise the computer is greater or equal to target_score 
     ai() #calling the ai function. 
