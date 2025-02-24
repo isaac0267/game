@@ -12,3 +12,24 @@ def printbord(bord): # we make the function bord and it take parameter
     print(bord['1']+'|'+bord['2']+'|'+bord['3'])
 
 printbord(theBoard) # we call the function. 
+
+def game():
+    turn='X'
+    count=0
+
+    for i in range(2):
+        printbord(theBoard)
+        print("It is your turn"+turn+"The move that you should")
+        
+        move=input()
+
+        if theBoard[move]=='':
+            theBoard[move]=turn
+            count+=1 
+        else:
+            print("The place is not empty")
+            continue      
+
+
+        
+           
